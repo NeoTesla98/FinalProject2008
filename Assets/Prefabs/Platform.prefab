@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2948248665967059144}
   - component: {fileID: 4392389107185170512}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platforms_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8048180084447922651}
   - component: {fileID: 541652830734269125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platforms_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1550948373776192819}
   - component: {fileID: 8504170565028822815}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platforms_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4277992681060168548}
   - component: {fileID: 501286271588241360}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -362,7 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1119997088605699442}
   - component: {fileID: 5779738893644208971}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platforms_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
