@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4738175059335430001}
   - component: {fileID: 5231044754876889393}
   - component: {fileID: 619308716856748458}
+  - component: {fileID: -6713601088359353037}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -186,6 +187,24 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &-6713601088359353037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7589517321043911356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c995aa19bf3bd7948bf35621685a036e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoubleJump
+  extraJumpsValue: 1
+  groundCheck: {fileID: 2342960256479676109}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  jumpForce: 10
 --- !u!1 &7857800446051332018
 GameObject:
   m_ObjectHideFlags: 0
