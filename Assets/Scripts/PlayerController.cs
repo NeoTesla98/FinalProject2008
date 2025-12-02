@@ -4,7 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     // Public variables appear in the Inspector, so you can tweak them without editing code.
     public float moveSpeed = 4f;       // How fast the player moves left/right
-    
+    //Coin Variable
+    public int coins;
     //Jump realated variables for the Jump Feature (later)
     public float jumpForce = 8f;      // How strong the jump is (vertical speed)
     public Transform groundCheck;      // Empty child object placed at the player's feet
