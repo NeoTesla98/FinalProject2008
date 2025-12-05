@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
     {
         // Get the SpriteRenderer component attached to the Player
         spriteRenderer = GetComponent<SpriteRenderer>();
-        UpdateHealthBar(); // update HealthBar at start
+        UpdateHealthBar(); // update HealthBar at start of game
     }
 
     // Method to reduce health when damage is taken
