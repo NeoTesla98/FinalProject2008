@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4738175059335430001}
   - component: {fileID: 5231044754876889393}
   - component: {fileID: 619308716856748458}
-  - component: {fileID: -6713601088359353037}
   - component: {fileID: 7445087308651012615}
   - component: {fileID: -5245993298940117065}
   m_Layer: 0
@@ -33,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2342960256479676109}
@@ -162,13 +161,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.15, y: 0.17}
+    oldSize: {x: 0.9375, y: 1.0625}
     newSize: {x: 0.15, y: 0.17}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.15, y: 0.17}
+  m_Size: {x: 0.8, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &619308716856748458
 MonoBehaviour:
@@ -182,31 +181,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7790ab42915ed4c48a09ed8a248a0d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  coins: 0
   moveSpeed: 4
   jumpForce: 8
+  extraJumpsValue: 1
   groundCheck: {fileID: 2342960256479676109}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
---- !u!114 &-6713601088359353037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7589517321043911356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c995aa19bf3bd7948bf35621685a036e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoubleJump
-  extraJumpsValue: 1
-  groundCheck: {fileID: 2342960256479676109}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  jumpForce: 10
 --- !u!95 &7445087308651012615
 Animator:
   serializedVersion: 7
@@ -242,6 +225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   health: 100
+  healthImage: {fileID: 0}
   damageAmount: 25
 --- !u!1 &7857800446051332018
 GameObject:
@@ -268,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 7857800446051332018}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0706, z: 0}
+  m_LocalPosition: {x: 0, y: -0.486, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
