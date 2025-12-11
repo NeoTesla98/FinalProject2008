@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         health -= damageAmount; // subtract damage amount
         UpdateHealthBar();      // Update HealthBar each frame
         StartCoroutine(BlinkRed()); // briefly flash red
-
+        SoundManager.Instance.PlaySFX("HURT");
         // If health reaches zero or below, call Die()
         if (health <= 0)
         {
