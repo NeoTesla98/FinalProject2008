@@ -71,7 +71,17 @@ public class PlayerController : MonoBehaviour
         // --- Animations ---
         SetAnimation(moveInput);
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("BouncePad"))
+        {
+            // Stronger bounce
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce * 2f);
 
+            // Sound effect (optional)
+           
+        }
+    }
     private void SetAnimation(float moveInput)
     {
         // Handle animations based on grounded state and movement
