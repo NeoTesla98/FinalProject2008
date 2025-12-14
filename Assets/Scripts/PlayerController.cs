@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     private float jumpBufferCounter;
     // Addng audio
     private AudioSource audioSource;
-    public AudioClip jumoClip;
+    public AudioClip jumpClip;
 
     void Start()
     {
